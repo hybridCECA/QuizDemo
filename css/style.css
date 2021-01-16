@@ -10,6 +10,11 @@ html, body {
   font-family: "Lato", sans-serif;
   background-color: #eee;
 }
+@media (max-width: 600px) {
+  html, body {
+    font-size: 80%;
+  }
+}
 
 .infoBar {
   display: flex;
@@ -52,8 +57,13 @@ html, body {
 
 .quiz {
   display: block;
-  width: 40rem;
+  width: 35rem;
   margin: 2rem auto 6rem auto;
+}
+@media (max-width: 600px) {
+  .quiz {
+    width: 90%;
+  }
 }
 
 .quizCards > :first-child {
