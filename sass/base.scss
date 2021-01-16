@@ -1,0 +1,14 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+
+    font-family: "Lato", sans-serif;
+
+    background-color: $color-light-gray;
+}

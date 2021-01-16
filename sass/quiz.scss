@@ -1,0 +1,108 @@
+.quiz {
+    display: block;
+    width: 40rem;
+
+    margin: 2rem auto 6rem auto;
+}
+
+.quizCards {
+    & > :first-child {
+        border-top-left-radius: $card-radius;
+        border-top-right-radius: $card-radius;
+    }
+
+    & > :last-child {
+        border-bottom-left-radius: $card-radius;
+        border-bottom-right-radius: $card-radius;
+    }
+}
+
+.quizText {
+    margin-left: $card-radius;
+    margin-bottom: 0.5rem;
+}
+
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid $color-gray;
+}
+
+.question {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 80%;
+    letter-spacing: 2px;
+}
+
+.content {
+    font-size: 130%;
+    margin-bottom: 1.5rem;
+}
+
+.answer {
+    display: inline-block;
+    width: 20rem;
+    padding: 0.25rem 1rem;
+    border-radius: 100rem;
+    border: 2px solid $color-gray;
+    margin-bottom: 0.5rem;
+
+    font-size: 110%;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: rgba($color-primary, 0.5);
+    }
+}
+
+.answerSelected {
+    background-color: $color-primary;
+    color: white;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
+
+.answerWrong {
+    background-color: $color-secondary;
+    color: white;
+
+    &:hover {
+        background-color: $color-secondary;
+    }
+}
+
+.answerRight {
+    background-color: $color-tertiary;
+    color: black;
+
+    &:hover {
+        background-color: $color-tertiary;
+    }
+}
+
+.textarea {
+    width: 100%;
+    height: 8rem;
+    resize: none;   
+    border: 2px solid $color-gray;
+    padding: 0.5rem;
+    font-size: 120%;
+
+    &:focus {
+        outline: none;
+        border: 2px solid $color-gray;
+    }
+}
+
+.result {
+    margin-top: 1rem;
+    border: 2px solid $color-gray;
+    padding: 1rem;
+    background-color: $color-light-gray;
+}

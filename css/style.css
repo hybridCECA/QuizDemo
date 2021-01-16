@@ -1,0 +1,150 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html, body {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+}
+
+.infoBar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid #bdbdbd;
+  background-color: white;
+}
+
+#info {
+  margin-left: 1rem;
+  font-size: 120%;
+  font-weight: 700;
+}
+
+.blank {
+  flex-grow: 1;
+}
+
+#submit {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  width: 8rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 100rem;
+  text-align: center;
+  background-color: rgba(8, 97, 41, 0.7);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#submit:hover {
+  background-color: #086129;
+}
+
+.quiz {
+  display: block;
+  width: 40rem;
+  margin: 2rem auto 6rem auto;
+}
+
+.quizCards > :first-child {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.quizCards > :last-child {
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.quizText {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #bdbdbd;
+}
+
+.question {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 80%;
+  letter-spacing: 2px;
+}
+
+.content {
+  font-size: 130%;
+  margin-bottom: 1.5rem;
+}
+
+.answer {
+  display: inline-block;
+  width: 20rem;
+  padding: 0.25rem 1rem;
+  border-radius: 100rem;
+  border: 2px solid #bdbdbd;
+  margin-bottom: 0.5rem;
+  font-size: 110%;
+  transition: all 0.3s ease;
+}
+.answer:hover {
+  background-color: rgba(8, 97, 41, 0.5);
+}
+
+.answerSelected {
+  background-color: #086129;
+  color: white;
+}
+.answerSelected:hover {
+  background-color: #086129;
+}
+
+.answerWrong {
+  background-color: #EF5350;
+  color: white;
+}
+.answerWrong:hover {
+  background-color: #EF5350;
+}
+
+.answerRight {
+  background-color: #2196F3;
+  color: black;
+}
+.answerRight:hover {
+  background-color: #2196F3;
+}
+
+.textarea {
+  width: 100%;
+  height: 8rem;
+  resize: none;
+  border: 2px solid #bdbdbd;
+  padding: 0.5rem;
+  font-size: 120%;
+}
+.textarea:focus {
+  outline: none;
+  border: 2px solid #bdbdbd;
+}
+
+.result {
+  margin-top: 1rem;
+  border: 2px solid #bdbdbd;
+  padding: 1rem;
+  background-color: #eee;
+}
+
+/*# sourceMappingURL=style.css.map */
