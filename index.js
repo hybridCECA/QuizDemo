@@ -139,11 +139,15 @@
         // Register the answer event listeners
         for (const answer of answers) {
             answer.addEventListener("click", handleAnswerClicked);
+            const newline = document.createElement("br");
+            answer.parentElement.insertBefore(newline, answer);
         }
 
         // Register the textarea event listeners
         for (const textarea of textareas) {
             textarea.addEventListener("keyup", updateInfo);
+            const newline = document.createElement("br");
+            textarea.parentElement.insertBefore(newline, textarea);
         }
     }
 

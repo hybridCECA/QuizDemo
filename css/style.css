@@ -86,18 +86,22 @@ html, body {
 
 .content {
   font-size: 130%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .answer {
   display: inline-block;
-  width: 20rem;
+  width: 15rem;
   padding: 0.25rem 1rem;
   border-radius: 100rem;
   border: 2px solid #bdbdbd;
   margin-bottom: 0.5rem;
   font-size: 110%;
   transition: all 0.3s ease;
+}
+.answer::before {
+  content: "";
+  display: block;
 }
 .answer:hover {
   background-color: rgba(8, 97, 41, 0.5);
