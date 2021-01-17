@@ -11,8 +11,4 @@ html, body {
     font-family: "Lato", sans-serif;
 
     background-color: $color-light-gray;
-
-    @media (max-width: 600px) {
-        font-size: 80%;
-    }
 }

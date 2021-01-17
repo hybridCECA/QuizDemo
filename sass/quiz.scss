@@ -22,8 +22,7 @@
 }
 
 .quizText {
-    margin-left: $card-radius;
-    margin-bottom: 0.5rem;
+    margin: 0 $card-radius 0.5rem $card-radius
 }
 
 
@@ -65,6 +64,10 @@
 
     &:hover {
         background-color: rgba($color-primary, 0.5);
+    }
+
+    @media (max-width: 600px) {
+        width: 100%
     }
 }
 
