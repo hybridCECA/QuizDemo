@@ -26,7 +26,7 @@
         }
 
         // Deselect other answers
-        const answers = event.target.parentElement.parentElement.getElementsByClassName("answer");
+        const answers = event.target.parentElement.getElementsByClassName("answer");
         for (const answer of answers) {
             answer.classList.remove("answerSelected")
         }
@@ -62,6 +62,7 @@
             return;
         }
 
+        window.scrollTo(0, 0);
         submitted = true;
 
         // Disable and add results to textareas
